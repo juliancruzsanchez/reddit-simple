@@ -1,5 +1,5 @@
 # reddit-simple
-Simple Wrapper Over Reddit Public API for node js No Overhead No Auth Token 
+_Simple wrapper over Reddit public API (no overhead, no auth token)_
 
 ### Get it from npm
 
