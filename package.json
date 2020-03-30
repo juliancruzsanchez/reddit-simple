@@ -1,5 +1,5 @@
 {
-  "name": "reddit-simple",
+  "name": "@ipmanlk/reddit-simple",
   "version": "2.2.0",
   "description": "Simple Reddit Wrapper for Public URL",
   "main": "index.js",
