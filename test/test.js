@@ -1,4 +1,4 @@
-const axios = require('axios');
+const { request } = require("../src/request");
 const assert = require('assert');
 const { TopPost, RandomPost, SubReddit, SpyRedditor } = require('../src');
 
@@ -17,10 +17,10 @@ describe(`Test Cases for TopPost`, async () => {
 
   describe('Logic to get Top Post From Url', async () => {
     it('should get maximum numbers of ups/votes than the rest', async () => {
-      const res = await axios.get(`https://www.reddit.com/r/Nepal.json`);
-      const all = res.data.data.children.map(i => i.data.ups);
+      const res = await request(`https://www.reddit.com/r/Nepal.json`);
+      const all = res.data.children.map(i => i.data.ups);
       const query = Math.max(...all);
-      const top1 = res.data.data.children.filter(i => i.data.ups == query);
+      const top1 = res.data.children.filter(i => i.data.ups == query);
       const title1 = top1[0].data.title;
       const srcc = await TopPost('Nepal');
       const max = srcc[0].data.ups;
