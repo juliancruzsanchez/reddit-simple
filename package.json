@@ -1,6 +1,6 @@
 {
   "name": "reddit-simple",
-  "version": "2.1.1",
+  "version": "2.2.0",
   "description": "Simple Reddit Wrapper for Public URL",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ErKiran/reddit-wrapper.git"
+    "url": "git+https://github.com/ipmanlk/reddit-simple"
   },
   "keywords": [
     "Reddit_Wrapper",
@@ -19,9 +19,9 @@
   "author": "Kiran Adhikari",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ErKiran/reddit-wrapper/issues"
+    "url": "https://github.com/ipmanlk/reddit-simple/issues"
   },
-  "homepage": "https://github.com/ErKiran/reddit-wrapper#readme",
+  "homepage": "https://github.com/ipmanlk/reddit-simple#readme",
   "dependencies": {},
   "devDependencies": {
     "mocha": "^6.1.4"
