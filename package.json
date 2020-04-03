@@ -1,7 +1,7 @@
 {
   "name": "@ipmanlk/reddit-simple",
-  "version": "2.2.0",
-  "description": "Simple Reddit Wrapper for Public URL",
+  "version": "2.2.1",
+  "description": "Simple wrapper over Reddit public API (no overhead, no auth token)",
   "main": "index.js",
   "scripts": {
     "test": "mocha --timeout 10000",
