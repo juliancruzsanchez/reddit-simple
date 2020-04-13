@@ -4,7 +4,7 @@
   "description": "Simple wrapper over Reddit public API (no overhead, no auth token)",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --timeout 10000",
+    "test": "mocha --timeout 180000",
     "start": "node index.js"
   },
   "repository": {
@@ -24,6 +24,6 @@
   "homepage": "https://github.com/ipmanlk/reddit-simple#readme",
   "dependencies": {},
   "devDependencies": {
-    "mocha": "^6.1.4"
+    "mocha": "^6.2.3"
   }
 }
