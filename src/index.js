@@ -11,6 +11,19 @@ module.exports = {
             return tosubmit;
         }
     },
+    TopPosts: async function TopPosts(name) {
+        const res = await axios.get(`https://www.reddit.com/r/${name}.json`);
+        if (res.length == 0) {
+            return false;
+        } else {
+            const posts = []
+
+            res.data.data.children.forEach(post => {
+                posts.push(post.data)
+            })
+            return posts
+        }
+    },
     RandomPost: async function RandomPost(name) {
         const res = await request(`https://www.reddit.com/r/${name}.json?limit=100`);
         if (res.length == 0) {
